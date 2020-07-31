@@ -21,8 +21,8 @@ app.use("/api/updateproduct", require("./routes/update_product_route"));
 app.use("/api/category", require("./routes/get_products_of_category"));
 app.use("/api/flavor", require("./routes/get_products_of_flavor"));
 app.use("/api/flavors", require("./routes/get_flavors_route"));
-const port = process.env.port || 4000;
+const PORT = process.env.PORT || 4000;
 
-app.listen(port, "0.0.0.0", () => {
-  console.log(`The server is running in the port ${port}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`The server is running in the port ${PORT}`);
 });
